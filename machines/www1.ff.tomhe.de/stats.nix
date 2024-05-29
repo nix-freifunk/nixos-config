@@ -1,4 +1,4 @@
-{config, pkgs, lib, ...}:
+{config, pkgs, lib, name, ...}:
 {
   imports = [
     ../../modules/acme.nix
@@ -8,18 +8,12 @@
     enable = true;
   };
 
-
-  deployment.keys."influxdb-basicAuth" = {
-    keyFile = ../../secrets/influxdb-basicAuth;
-    destDir = "/etc/nginx/influxdb-basicAuth";
-    name = "influxdb";
-    user = "root";
+  age.secrets."influxdb-basicAuth" = {
+    file = ../../secrets/${name}/influxdb-basicAuth.age;
+    mode = "0400";
+    owner = "root";
     group = "root";
-    permissions = "0400";
-    uploadAt = "pre-activation";
   };
-
-  # credentialsFile = "${config.deployment.keys.acme-environment.destDir}/${config.deployment.keys.acme-environment.name}";
 
   services.nginx = lib.mkIf config.services.influxdb.enable {
     enable = lib.mkDefault true;
@@ -31,9 +25,9 @@
         #   default_type text/plain;
         # '';
         recommendedProxySettings = true;
-        basicAuthFile = "${config.deployment.keys.influxdb-basicAuth.destDir}/${config.deployment.keys.influxdb-basicAuth.name}";
+        basicAuthFile = config.age.secrets."influxdb-basicAuth".path;
       };
-      basicAuthFile = "${config.deployment.keys.influxdb-basicAuth.destDir}/${config.deployment.keys.influxdb-basicAuth.name}";
+      basicAuthFile = config.age.secrets."influxdb-basicAuth".path;
 
       # locations."/data/".alias = "/var/www/html/meshviewer/data/";
       useACMEHost = "${config.networking.hostName}.${config.networking.domain}";

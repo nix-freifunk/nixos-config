@@ -9,14 +9,11 @@ in
     ./unbound
   ];
 
-  deployment.keys."fastd-secret" = {
-    keyFile = ../../secrets/fastd/${name};
-    destDir = "/etc/fastd";
-    name = "secret.conf";
-    user = "root";
+  age.secrets."fastd" = {
+    file = ../../secrets/${name}/fastd.age;
+    mode = "0400";
+    owner = "root";
     group = "root";
-    permissions = "0400";
-    uploadAt = "pre-activation";
   };
 
   networking = {
@@ -39,7 +36,7 @@ in
     yanic.enable = true;
     fastd = {
       peerDir = peerDir;
-      secretKeyIncludeFile = "${config.deployment.keys."fastd-secret".path}";
+      secretKeyIncludeFile = config.age.secrets."fastd".path;
     };
     domains = {
       dom0 = {
@@ -79,7 +76,7 @@ in
         fastd = {
           enable = true;
           peerDir = peerDir;
-          secretKeyIncludeFile = "${config.deployment.keys."fastd-secret".path}";
+          secretKeyIncludeFile = config.age.secrets."fastd".path;
         };
         batmanAdvanced = {
         };
@@ -175,7 +172,6 @@ in
       #     enable = false;
       #     port = 10190;
       #     peerDir = peerDir;
-      #     secretKeyIncludeFile = "${config.deployment.keys."fastd-secret".path}";
       #   };
       # };
     };

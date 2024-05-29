@@ -25,6 +25,7 @@ in
     ];
 
     imports = [
+      (sources.agenix + "/modules/age.nix")
       ./modules/time.nix
     ];
   };

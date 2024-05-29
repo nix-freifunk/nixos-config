@@ -2,21 +2,18 @@
 
 {
 
-  deployment.keys."acme-environment" = {
-    keyFile = ../secrets/acme/${name};
-    destDir = "/run/keys/acme";
-    name = "environment";
-    user = "root";
+  age.secrets."acme" = {
+    file = ../secrets/${name}/acme.age;
+    mode = "0400";
+    owner = "root";
     group = "root";
-    permissions = "0400";
-    uploadAt = "pre-activation";
   };
 
   security.acme = {
     defaults = {
       email = "freifunk-webmaster@tomherbers.de";
       dnsProvider = "rfc2136";
-      credentialsFile = "${config.deployment.keys.acme-environment.destDir}/${config.deployment.keys.acme-environment.name}";
+      credentialsFile = config.age.secrets."acme".path;
     };
     acceptTerms = true;
   };
