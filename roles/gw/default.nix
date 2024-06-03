@@ -46,22 +46,22 @@ in
         };
         vxlan.vni = 97726;
         ipv4 = {
-          # subnet = "10.84.0.0/20";
-          prefixes."10.84.0.0/20" = {};
+          # subnet = "10.1.64.0/20";
+          prefixes."10.1.64.0/20" = {};
 
-          # address = "10.84.0.1";
+          # address = "10.1.64.1";
           dhcpV4 = {
             enable = lib.mkDefault true;
-            dnsServers = [ "10.84.15.254" ];
+            dnsServers = [ "10.1.67.254" ];
             # pools = [
-            #   "10.84.0.8 - 10.84.1.255"
-            #   "10.84.2.8 - 10.84.3.255"
+            #   "10.1.64.8 - 10.1.64.255"
+            #   "10.1.65.8 - 10.84.3.255"
             # ];
           };
         };
         ipv6 = {
-          # subnet = "fd01:67c:2ed8:1000::/64";
-          # address = "fd01:67c:2ed8:1000::1";
+          # subnet = "fdeb:52c8:d094:1000::/64";
+          # address = "fdeb:52c8:d094:1000::1";
           # dhcpV4 = {
           #   enable = true;
           #   dnsServers = [ "10.84.15.254" ];
@@ -69,6 +69,7 @@ in
         };
       };
       dom18 = {
+        enable = false;
         names = {
           dom18 = "Domain 18";
           ffda_da_540_kelley = "Darmstadt: Kelley-Barracks";
@@ -89,8 +90,8 @@ in
           # dhcpV4.enable = false;
         };
         ipv6 = {
-          # subnet = "fd01:67c:2ed8:1012::/64";
-          # address = "fd01:67c:2ed8:1012::1";
+          # subnet = "fdeb:52c8:d094:1012::/64";
+          # address = "fdeb:52c8:d094:1012::1";
         };
       };
       dom1 = {

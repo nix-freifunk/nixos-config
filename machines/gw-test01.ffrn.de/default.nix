@@ -48,7 +48,7 @@
       chain postrouting {
         type nat hook postrouting priority srcnat; policy accept;
         ip saddr 10.0.0.0/8 masquerade
-        ip6 saddr fd01:67c:2ed8:1000::/64 masquerade
+        ip6 saddr fdeb:52c8:d094:1000::/64 masquerade
       }
     '';
     family = "inet";

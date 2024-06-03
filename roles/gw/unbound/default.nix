@@ -32,8 +32,8 @@ in {
 
         interface = [
           "::1" "127.0.0.1"    # localhost
-          "fd01:67c:2ed8:a::55:1" # ns1
-          "fd01:67c:2ed8:a::56:1" # ns2
+          "fdeb:52c8:d094:a::55:1" # ns1
+          "fdeb:52c8:d094:a::56:1" # ns2
         ];
 
         access-control  = [
