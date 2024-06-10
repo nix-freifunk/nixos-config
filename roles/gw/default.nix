@@ -60,12 +60,6 @@ in
           };
         };
         ipv6 = {
-          # subnet = "fdeb:52c8:d094:1000::/64";
-          # address = "fdeb:52c8:d094:1000::1";
-          # dhcpV4 = {
-          #   enable = true;
-          #   dnsServers = [ "10.84.15.254" ];
-          # };
         };
       };
       dom18 = {
@@ -85,13 +79,9 @@ in
           vni = 14443279;
         };
         ipv4 = {
-          # subnet = "10.85.32.0/20";
-          # address = "10.85.32.1";
           # dhcpV4.enable = false;
         };
         ipv6 = {
-          # subnet = "fdeb:52c8:d094:1012::/64";
-          # address = "fdeb:52c8:d094:1012::1";
         };
       };
       dom1 = {

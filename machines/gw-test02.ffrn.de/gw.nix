@@ -56,7 +56,6 @@
           mac = "0a:c4:b9:de:ff:c7";
         };
         ipv4 = {
-          # address = "10.1.65.1";
           prefixes = {
             "10.1.64.0/20" = {
               addresses =[
@@ -72,7 +71,6 @@
           
         };
         ipv6 = {
-          # address = "fdeb:52c8:d094:1000::2";
           prefixes = {
             "fdeb:52c8:d094:1000::/64" = {
               addresses =[
