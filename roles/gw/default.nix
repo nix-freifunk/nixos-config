@@ -38,6 +38,9 @@ in
       peerDir = peerDir;
       secretKeyIncludeFile = config.age.secrets."fastd".path;
     };
+    dnsSearchDomain = [
+      "ff.tomhe.de"
+    ];
     domains = {
       dom0 = {
         names = {
@@ -60,6 +63,9 @@ in
           };
         };
         ipv6 = {
+          dnssServers = [
+            "fdeb:52c8:d094:1000::1:1"
+          ];
         };
       };
       dom18 = {

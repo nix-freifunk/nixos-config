@@ -10,42 +10,6 @@
       "fdeb:52c8:d094:a::55:1" # ns1
       "fdeb:52c8:d094:a::56:1" # ns2
     ];
-    extraConfig = ''
-      protocol radv radv_dom0 {
-        propagate routes no;
-
-        ipv6 {
-          table master6;
-          export all;
-          import none;
-        };
-
-        interface "bat-dom0" {
-          min delay 3;
-          max ra interval 60;
-          solicited ra unicast yes;
-          prefix  fdeb:52c8:d094:1000::/64 {
-            valid lifetime 3600;
-            preferred lifetime 1800;
-          };
-          rdnss {
-            lifetime mult 10;
-            ns fdeb:52c8:d094:1000::1:1;
-          };
-          dnssl {
-            domain "ff.tomhe.de";
-          };
-          link mtu 1280;
-
-          # custom option type 38 value hex:0e:10:20:01:06:7c:29:60:64:64:00:00:00:00;
-          # custom option type 38 value hex:0e:10:00:64:ff:9b:00:00:00:00:00:00:00:00;
-        };
-
-        prefix ::/0 {
-          skip;
-        };
-      }
-    '';
   };
 
   modules.freifunk.gateway = {
@@ -81,6 +45,7 @@
               addresses =[
                 "2a01:4f8:160:97c0::2"
               ];
+              announce = false;
             };
           };
         };
