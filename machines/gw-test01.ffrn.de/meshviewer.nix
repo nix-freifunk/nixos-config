@@ -20,6 +20,10 @@
       devicePictures = "";
       domainNames = [
         {
+          domain = "dom0";
+          name = "Domain 0";
+        }
+        {
           domain = "ffda_da_540_kelley";
           name = "Darmstadt: Kelley-Barracks";
         }
