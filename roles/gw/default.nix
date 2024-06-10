@@ -63,7 +63,7 @@ in
           };
         };
         ipv6 = {
-          dnssServers = [
+          dnsServers = [
             "fdeb:52c8:d094:1000::1:1"
           ];
         };
