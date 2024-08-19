@@ -16,4 +16,12 @@
     useXkbConfig = true; # use xkb.options in tty.
   };
 
+  # automatically remove unused old derivations
+  nix.gc = {
+    automatic = true;
+    dates = "daily";
+    randomizedDelaySec = "6h";
+    options = "--delete-older-than 14d";
+  };
+
 }
