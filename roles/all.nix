@@ -24,4 +24,11 @@
     options = "--delete-older-than 14d";
   };
 
+  # Ensure that we can't even touch the configuration directory if we wanted to.
+  fileSystems."/etc/nixos" = {
+    device = "tmpfs";
+    fsType = "tmpfs";
+    options = [ "size=1M,ro" ];
+  };
+
 }
