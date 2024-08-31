@@ -1,0 +1,22 @@
+name: "colmena build"
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update and Upgrade system
+      run: |
+         DEBIAN_FRONTEND=noninteractive
+         sudo apt-get update -q -y && sudo apt-get upgrade -q -y
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
+    - uses: cachix/install-nix-action@v27
+      with:
+        nix_path: nixpkgs=channel:nixos-24.05
+    - uses: DeterminateSystems/magic-nix-cache-action@v7
+    - run: nix-shell --run "colmena build"
