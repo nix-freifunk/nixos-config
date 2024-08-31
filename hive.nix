@@ -37,6 +37,10 @@ in
     imports = [ ./machines/gw-test02.ffrn.de ];
   };
 
+  "resolver1" = { name, nodes, ... }:  {
+    imports = [ ./machines/resolver1.ff.tomhe.de ];
+  };
+
   "www1" = { name, nodes, ... }:  {
     imports = [ ./machines/www1.ff.tomhe.de ];
   };
