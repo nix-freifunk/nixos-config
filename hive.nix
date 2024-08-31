@@ -40,6 +40,9 @@ in
   "resolver1" = { name, nodes, ... }:  {
     imports = [ ./machines/resolver1.ff.tomhe.de ];
   };
+  "resolver2" = { name, nodes, ... }:  {
+    imports = [ ./machines/resolver2.ff.tomhe.de ];
+  };
 
   "www1" = { name, nodes, ... }:  {
     imports = [ ./machines/www1.ff.tomhe.de ];

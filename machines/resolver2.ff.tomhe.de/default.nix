@@ -25,9 +25,9 @@
     device = "/dev/vda";
   };
 
-  networking.hostName = "resolver1";
+  networking.hostName = "resolver2";
   networking.domain = "ff.tomhe.de";
-  deployment.targetHost = "2a01:4f8:171:3242:5054:ff:fefa:a211";
+  deployment.targetHost = "2a01:4f8:140:4093:5054:ff:fe2c:c94b";
 
   networking.nftables.enable = true;
 
