@@ -3,7 +3,7 @@
 
   services.prometheus.exporters.unbound = {
     enable = true;
-    controlInterface = "${config.services.unbound.localControlSocketPath}";
+    unbound.host = "unix://${config.services.unbound.localControlSocketPath}";
     listenAddress = "[::]";
     group = "${config.services.unbound.group}";
   };
