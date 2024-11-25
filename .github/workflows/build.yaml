@@ -19,4 +19,5 @@ jobs:
       with:
         nix_path: nixpkgs=channel:nixos-24.05
     - uses: DeterminateSystems/magic-nix-cache-action@v7
-    - run: nix-shell --run "colmena build"
+    - name: colmena build
+      run: nix-shell --run "colmena build -v"
