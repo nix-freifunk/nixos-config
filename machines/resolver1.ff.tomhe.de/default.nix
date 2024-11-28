@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ../../roles/all.nix
+      ./resolver.nix
     ];
 
   boot.kernelParams = [ "console=ttyS0,115200n8" ];
