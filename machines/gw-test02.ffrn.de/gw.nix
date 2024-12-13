@@ -45,7 +45,7 @@
               addresses =[
                 "2a01:4f8:160:97c0::2"
               ];
-              announce = false;
+              # announce = false;
             };
           };
         };
