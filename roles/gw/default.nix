@@ -2,10 +2,11 @@
 let
   peerDir = "/var/lib/fastd/peer_groups/nodes";
 
+  sources = import ../../nix/sources.nix;
 in
 {
   imports = [
-    ../../modules/freifunk
+    (import sources.nixos-freifunk)
     ./unbound
   ];
 

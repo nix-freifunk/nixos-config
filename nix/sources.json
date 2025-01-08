@@ -23,6 +23,18 @@
         "url": "https://github.com/herbetom/niv-updater/archive/1b05fab7974132f48dd98e4f20dfae40851df691.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "nixos-freifunk": {
+        "branch": "main",
+        "description": "nix modules to configure freifunk systems",
+        "homepage": "https://matrix.to/#/#nix-freifunk:matrix.org",
+        "owner": "nix-freifunk",
+        "repo": "nixos-freifunk",
+        "rev": "5067fb665c26353ab69824185c2cffcb335f0cd2",
+        "sha256": "0r4vrryk9h5mwq3swdrpicck3qr9vbnfb165658krr5qk1db3w3k",
+        "type": "tarball",
+        "url": "https://github.com/nix-freifunk/nixos-freifunk/archive/5067fb665c26353ab69824185c2cffcb335f0cd2.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "nixpkgs": {
         "branch": "nixos-24.11-small",
         "description": "Nix Packages collection & NixOS",

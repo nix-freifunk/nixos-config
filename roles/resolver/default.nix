@@ -1,7 +1,10 @@
 { config, lib, pkgs, ... }:
+let
+  sources = import ../../nix/sources.nix;
+in
 {
   imports = [
-    ../../modules/freifunk
+    (import sources.nixos-freifunk)
   ];
 
   modules.freifunk.gateway = {

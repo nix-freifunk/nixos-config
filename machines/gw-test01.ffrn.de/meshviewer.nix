@@ -1,7 +1,6 @@
 {config, pkgs, lib, ...}:
 {
   imports = [
-    ../../modules/freifunk
     ../../modules/acme.nix
   ];
 
