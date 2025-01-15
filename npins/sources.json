@@ -1,0 +1,53 @@
+{
+  "pins": {
+    "agenix": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "ryantm",
+        "repo": "agenix"
+      },
+      "branch": "main",
+      "revision": "f6291c5935fdc4e0bef208cfc0dcab7e3f7a1c41",
+      "url": "https://github.com/ryantm/agenix/archive/f6291c5935fdc4e0bef208cfc0dcab7e3f7a1c41.tar.gz",
+      "hash": "1x8nd8hvsq6mvzig122vprwigsr3z2skanig65haqswn7z7amsvg"
+    },
+    "nixos-freifunk": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-freifunk",
+        "repo": "nixos-freifunk"
+      },
+      "branch": "main",
+      "revision": "5abea2fb632e3b1a32f9c5d2f1d4300ab4f93141",
+      "url": "https://github.com/nix-freifunk/nixos-freifunk/archive/5abea2fb632e3b1a32f9c5d2f1d4300ab4f93141.tar.gz",
+      "hash": "0az0dd6kb4s9jjymq124islx1cign91ppajqdvbmgxi1l3bpgbj4"
+    },
+    "nixpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "NixOS",
+        "repo": "nixpkgs"
+      },
+      "branch": "nixos-24.11-small",
+      "revision": "aedc34a0abc375a413d16802ee5172b4247d20db",
+      "url": "https://github.com/NixOS/nixpkgs/archive/aedc34a0abc375a413d16802ee5172b4247d20db.tar.gz",
+      "hash": "1g37vaqq03xq39m3shiz3ip067xy3shpvf37mrq3431cxnj4jj0n"
+    },
+    "npins-updater": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "herbetom",
+        "repo": "npins-updater"
+      },
+      "branch": "main",
+      "revision": "9f0e99c700fc12a1472c999bc248d0d74de45921",
+      "url": "https://github.com/herbetom/npins-updater/archive/9f0e99c700fc12a1472c999bc248d0d74de45921.tar.gz",
+      "hash": "14j0pavqrd7f8jpavpzmlmjqfiy3hkyx3ab8s7hxnwvcwykqcqxc"
+    }
+  },
+  "version": 3
+}

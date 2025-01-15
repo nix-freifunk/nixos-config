@@ -2,7 +2,7 @@
 let
   peerDir = "/var/lib/fastd/peer_groups/nodes";
 
-  sources = import ../../nix/sources.nix;
+  sources = import ../../npins;
 in
 {
   imports = [
