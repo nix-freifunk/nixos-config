@@ -8,20 +8,22 @@
         "repo": "agenix"
       },
       "branch": "main",
+      "submodules": false,
       "revision": "e600439ec4c273cf11e06fe4d9d906fb98fa097c",
       "url": "https://github.com/ryantm/agenix/archive/e600439ec4c273cf11e06fe4d9d906fb98fa097c.tar.gz",
       "hash": "006ngydiykjgqs85cl19h9klq8kaqm5zs0ng51dnwy7nzgqxzsdr"
     },
-    "nixos-freifunk": {
+    "nix-freifunk": {
       "type": "Git",
       "repository": {
         "type": "GitHub",
         "owner": "nix-freifunk",
-        "repo": "nixos-freifunk"
+        "repo": "nix-freifunk"
       },
       "branch": "main",
+      "submodules": false,
       "revision": "5abea2fb632e3b1a32f9c5d2f1d4300ab4f93141",
-      "url": "https://github.com/nix-freifunk/nixos-freifunk/archive/5abea2fb632e3b1a32f9c5d2f1d4300ab4f93141.tar.gz",
+      "url": "https://github.com/nix-freifunk/nix-freifunk/archive/5abea2fb632e3b1a32f9c5d2f1d4300ab4f93141.tar.gz",
       "hash": "0az0dd6kb4s9jjymq124islx1cign91ppajqdvbmgxi1l3bpgbj4"
     },
     "nixpkgs": {
@@ -32,9 +34,23 @@
         "repo": "nixpkgs"
       },
       "branch": "nixos-24.11-small",
+      "submodules": false,
       "revision": "e24b4c09e963677b1beea49d411cd315a024ad3a",
       "url": "https://github.com/NixOS/nixpkgs/archive/e24b4c09e963677b1beea49d411cd315a024ad3a.tar.gz",
       "hash": "1m383nldy1jvl8n2jw02l26w9iib4b2a9341c1kf74miaahw7qx6"
+    },
+    "npins": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "andir",
+        "repo": "npins"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "4dbde2a195aa86a8833a81ec5395ebfc7b7428e6",
+      "url": "https://github.com/andir/npins/archive/4dbde2a195aa86a8833a81ec5395ebfc7b7428e6.tar.gz",
+      "hash": "05c5j6jnw4j0lq272fysb89ssbwz6cx4mkjwjizv173lh09yv4sg"
     },
     "npins-updater": {
       "type": "Git",
@@ -44,10 +60,11 @@
         "repo": "npins-updater"
       },
       "branch": "main",
+      "submodules": false,
       "revision": "9f0e99c700fc12a1472c999bc248d0d74de45921",
       "url": "https://github.com/herbetom/npins-updater/archive/9f0e99c700fc12a1472c999bc248d0d74de45921.tar.gz",
       "hash": "14j0pavqrd7f8jpavpzmlmjqfiy3hkyx3ab8s7hxnwvcwykqcqxc"
     }
   },
-  "version": 3
+  "version": 4
 }

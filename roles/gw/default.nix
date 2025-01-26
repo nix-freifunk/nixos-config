@@ -6,7 +6,7 @@ let
 in
 {
   imports = [
-    (import sources.nixos-freifunk)
+    (import sources.nix-freifunk)
     ./unbound
   ];
 
