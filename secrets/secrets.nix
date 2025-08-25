@@ -8,7 +8,7 @@ let
   ];
 
   gw-test01 = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEb5Nzz7cfLhKEEjBoqxxy8O+aWwnBUUPPbsaqjkBZYt" ];
-  gw-test02 = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGSor4Kbpm2//WZXOk5qnCWlyI45SEBhBtXeoEdiniss" ];
+  gw-test02 = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIELHznxsGnBgJpryB+gmQjD7DWqmHCfoGqNeIWYnUFd5" ];
   www1 = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG4i5fBF0dk57Sl2pgrpBoONof3m0lr8yeogF+OPxfBl" ];
 
   admins = tom;

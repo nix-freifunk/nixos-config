@@ -13,6 +13,7 @@
   };
 
   modules.freifunk.gateway = {
+    outInterfaces = [ config.systemd.network.networks."10-mainif".matchConfig.Name ];
     vxlan.local = "2a01:4f8:140:4093:5054:ff:fe02:e2a6";
     domains = {
       dom0 = {
