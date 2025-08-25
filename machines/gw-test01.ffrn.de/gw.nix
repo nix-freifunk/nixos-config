@@ -25,6 +25,7 @@
   services.yanic.autostart = true;
 
   modules.freifunk.gateway = {
+    outInterfaces = [ config.systemd.network.networks."10-mainif".matchConfig.Name ];
     vxlan.local = "2a01:4f8:160:624c:5054:ff:fe6b:6397";
     domains = {
       dom0 = {

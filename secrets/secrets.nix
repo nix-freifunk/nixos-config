@@ -7,7 +7,7 @@ let
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKYkU9Fla4gbEqj0nW2vSHQ8aVQM7RtB7E2ynAMU/rb7 ffda@tom v1"
   ];
 
-  gw-test01 = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDtR8TRk8ZSnNjDTADNqFDLyYseZHJN0JuoZ7oFQ5CeG" ];
+  gw-test01 = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEb5Nzz7cfLhKEEjBoqxxy8O+aWwnBUUPPbsaqjkBZYt" ];
   gw-test02 = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGSor4Kbpm2//WZXOk5qnCWlyI45SEBhBtXeoEdiniss" ];
   www1 = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG4i5fBF0dk57Sl2pgrpBoONof3m0lr8yeogF+OPxfBl" ];
 
